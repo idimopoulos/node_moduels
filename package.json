@@ -10,7 +10,8 @@
 	},
 	"keywords": [
 		"censor",
-		"words"
+		"words",
+		"something"
 	],
 	"dependencies":{},
 	"engines":{
