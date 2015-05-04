@@ -1,0 +1,19 @@
+{
+	"author":"Ilias Dimopoulos",
+	"name":"example",
+	"version":"0.0.1",
+	"description":"Censorec words out of text",
+	"main":"example",
+	"repository":{
+		"type":"git",
+		"url": "http://github.com/idimopoulos/node_modules"
+	},
+	"keywords": [
+		"censor",
+		"words"
+	],
+	"dependencies":{},
+	"engines":{
+		"node":"*"
+	}
+}

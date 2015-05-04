@@ -1,0 +1,98 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose publish [ '.' ]
+6 silly cache add args [ '.', null ]
+7 verbose cache add spec .
+8 silly cache add parsed spec { raw: '.',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: '.',
+8 silly cache add   spec: 'C:\\Users\\idimopoulos\\node_modules\\example',
+8 silly cache add   type: 'directory' }
+9 verbose addLocalDirectory C:\Users\idimopoulos\AppData\Roaming\npm-cache\example\0.0.1\package.tgz not in flight; packing
+10 verbose tar pack [ 'C:\\Users\\idimopoulos\\AppData\\Roaming\\npm-cache\\example\\0.0.1\\package.tgz',
+10 verbose tar pack   'C:\\Users\\idimopoulos\\node_modules\\example' ]
+11 verbose tarball C:\Users\idimopoulos\AppData\Roaming\npm-cache\example\0.0.1\package.tgz
+12 verbose folder C:\Users\idimopoulos\node_modules\example
+13 info prepublish example@0.0.1
+14 verbose addLocalTarball adding from inside cache C:\Users\idimopoulos\AppData\Roaming\npm-cache\example\0.0.1\package.tgz
+15 silly cache afterAdd example@0.0.1
+16 verbose afterAdd C:\Users\idimopoulos\AppData\Roaming\npm-cache\example\0.0.1\package\package.json not in flight; writing
+17 verbose afterAdd C:\Users\idimopoulos\AppData\Roaming\npm-cache\example\0.0.1\package\package.json written
+18 silly publish { author: { name: 'Ilias Dimopoulos' },
+18 silly publish   name: 'example',
+18 silly publish   version: '0.0.1',
+18 silly publish   description: 'Censorec words out of text',
+18 silly publish   main: 'example',
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'http://github.com/idimopoulos/node_modules' },
+18 silly publish   keywords: [ 'censor', 'words' ],
+18 silly publish   dependencies: {},
+18 silly publish   engines: { node: '*' },
+18 silly publish   readme: 'This is the description of the example module that replaces some annoying words like "bad".#TEST \r\n',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   bugs: { url: 'https://github.com/idimopoulos/node_modules/issues' },
+18 silly publish   homepage: 'https://github.com/idimopoulos/node_modules',
+18 silly publish   _id: 'example@0.0.1',
+18 silly publish   scripts: {},
+18 silly publish   _shasum: 'e67a7e8a272fc5e0955d3eb0f58b2f2fcef226dc',
+18 silly publish   _from: '.' }
+19 silly mapToRegistry name example
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/example
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading C:\Users\idimopoulos\AppData\Roaming\npm-cache\example\0.0.1\package.tgz
+25 verbose request uri https://registry.npmjs.org/example
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 16:16:42
+28 verbose request using bearer token for auth
+29 verbose request id 5cdec990c0c2014a
+30 http request PUT https://registry.npmjs.org/example
+31 http 404 https://registry.npmjs.org/example
+32 verbose headers { 'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=0',
+32 verbose headers   'content-length': '21',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Mon, 04 May 2015 13:16:43 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-lhr6330-LHR',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1430745402.486062,VS0,VE637' }
+33 verbose request invalidating C:\Users\idimopoulos\AppData\Roaming\npm-cache\registry.npmjs.org\example on PUT
+34 error publish Failed PUT 404
+35 verbose stack Error: Not found : example
+35 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:247:14)
+35 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:170:14)
+35 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:344:22)
+35 verbose stack     at Request.emit (events.js:110:17)
+35 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1239:14)
+35 verbose stack     at Request.emit (events.js:129:20)
+35 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1187:12)
+35 verbose stack     at IncomingMessage.emit (events.js:129:20)
+35 verbose stack     at _stream_readable.js:908:16
+35 verbose stack     at process._tickCallback (node.js:355:11)
+36 verbose statusCode 404
+37 verbose pkgid example
+38 verbose cwd C:\Users\idimopoulos\node_modules\example
+39 error Windows_NT 6.1.7601
+40 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+41 error node v0.12.2
+42 error npm  v2.7.4
+43 error code E404
+44 error 404 Not found : example
+44 error 404
+44 error 404 'example' is not in the npm registry.
+44 error 404 You should bug the author to publish it (or use the name yourself!)
+44 error 404
+44 error 404 Note that you can also install from a
+44 error 404 tarball, folder, http url, or git url.
+45 verbose exit [ 1, true ]
