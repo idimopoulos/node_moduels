@@ -9,8 +9,8 @@ function censor(inStr){
 	}
 	return inStr;
 }
-function addCensoredWord(word){
-	customCensoredWords.push(word);
+function addCensoredWord(testword){
+	customCensoredWords.push(testword);
 }
 function getCensoredWords(){
 	return censoredWords.concat(customCensoredWords);
