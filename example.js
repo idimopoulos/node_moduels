@@ -11,6 +11,7 @@ function censor(inStr){
 }
 function addCensoredWord(testword){
 	customCensoredWords.push(testword);
+	Console.log("Test");
 }
 function getCensoredWords(){
 	return censoredWords.concat(customCensoredWords);
